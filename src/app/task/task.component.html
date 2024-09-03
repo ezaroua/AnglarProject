@@ -1,0 +1,11 @@
+<p>task works!</p>
+<div>
+    <h2 [appTaskStatusColor]="currentTask.etat">{{ currentTask.titre }}</h2>
+    <p >{{ currentTask.description }}</p>
+    <p >État : {{ currentTask.etat }}</p>
+</div>
+
+<p>Date de création : {{ currentTask.creationDate | dateFormat }}</p>
+
+
+

@@ -1,0 +1,13 @@
+<form [formGroup]="deleteForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="title">Title of Task to Delete</label>
+      <input id="title" formControlName="title" placeholder="Enter task title" />
+      <div *ngIf="deleteForm.get('title')?.invalid && deleteForm.get('title')?.touched">
+        <small *ngIf="deleteForm.get('title')?.hasError('required')">Title is required.</small>
+        <small *ngIf="deleteForm.get('title')?.hasError('minlength')">Title must be at least 3 characters long.</small>
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="deleteForm.invalid">Delete Task</button>
+  </form>
+  

@@ -1,0 +1,51 @@
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="title">Title</label>
+      <input id="title" formControlName="title" />
+      <app-error-required-field-form 
+        [showError]="!!(taskForm.get('title')?.hasError('required') && taskForm.get('title')?.touched)" 
+        fieldName="Title">
+      </app-error-required-field-form>
+      <app-error-minLength-field-form 
+        [showError]="!!(taskForm.get('title')?.hasError('minlength') && taskForm.get('title')?.touched)" 
+        fieldName="Title" 
+        [minLength]="3">
+      </app-error-minLength-field-form>
+      <app-error-maxLength-field-form 
+        [showError]="!!(taskForm.get('title')?.hasError('maxlength') && taskForm.get('title')?.touched)" 
+        fieldName="Title" 
+        [maxLength]="50">
+      </app-error-maxLength-field-form>
+    </div>
+  
+    <div>
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description"></textarea>
+      <app-error-required-field-form 
+        [showError]="!!(taskForm.get('description')?.hasError('required') && taskForm.get('description')?.touched)" 
+        fieldName="Description">
+      </app-error-required-field-form>
+      <app-error-minLength-field-form 
+        [showError]="!!(taskForm.get('description')?.hasError('minlength') && taskForm.get('description')?.touched)" 
+        fieldName="Description" 
+        [minLength]="5">
+      </app-error-minLength-field-form>
+      <app-error-maxLength-field-form 
+        [showError]="!!(taskForm.get('description')?.hasError('maxlength') && taskForm.get('description')?.touched)" 
+        fieldName="Description" 
+        [maxLength]="200">
+      </app-error-maxLength-field-form>
+    </div>
+  
+    <div>
+      <label for="status">Status</label>
+      <select id="status" formControlName="status">
+        <option [value]="TaskStat.A_FAIRE">A Faire</option>
+        <option [value]="TaskStat.EN_COURS">En Cours</option>
+        <option [value]="TaskStat.TERMINEE">Terminee</option>
+      </select>
+    </div>
+  
+    <button type="submit" [disabled]="taskForm.invalid">Add Task</button>
+  </form>
+  

@@ -1,0 +1,13 @@
+
+<p>task-list works!</p>
+<div *ngFor="let task of taskList.tasks">
+    <app-task [currentTask]="task"></app-task>
+</div>
+
+<h3>Tâches archivées :</h3>
+<div *ngFor="let task of archivedTasks">
+    <app-task [currentTask]="task"></app-task>
+</div>
+
+
+
