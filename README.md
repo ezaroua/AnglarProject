@@ -1,7 +1,7 @@
-Description
+Description:
 Il s'agit d'une application simple de gestion des tâches construite avec Angular. L'application permet aux utilisateurs de gérer leurs tâches en ajoutant, mettant à jour et supprimant des tâches. Chaque tâche comporte un titre, une description, un statut et une date de création.
 
-Fonctionnalités
+Fonctionnalités:
 Ajouter une tâche : Les utilisateurs peuvent ajouter de nouvelles tâches avec un titre, une description et un statut.
 Voir les tâches : La liste de toutes les tâches est affichée sur l'interface.
 Mettre à jour une tâche : Les utilisateurs peuvent mettre à jour les détails d'une tâche existante.
@@ -12,14 +12,15 @@ Angular : Framework front-end utilisé pour construire l'application.
 TypeScript : Superset de JavaScript utilisé pour le développement des applications Angular.
 RxJS : Bibliothèque utilisée pour la programmation réactive avec des Observables dans Angular.
 SCSS : Utilisé pour le stylage de l'application.
-Installation
+
+Installation:
 Pour exécuter ce projet localement, suivez ces étapes :
 
 Clonez le dépôt :
 
 bash
 Copy code
-git clone https://github.com/votre-nom-utilisateur/task-management.git
+git clone https://github.com/ezaroua/AnglarProject.git
 Accédez au répertoire du projet :
 
 bash
@@ -44,7 +45,7 @@ Ouvrez l'application :
 Ouvrez votre navigateur et accédez à http://localhost:4200/.
 
 
-Utilisation
+Utilisation:
 Ajouter une Tâche
 Accédez au formulaire "Ajouter une tâche".
 Entrez les informations requises (Titre, Description, Statut).
@@ -57,7 +58,8 @@ Cliquez sur une tâche dans la liste pour l'éditer.
 Modifiez les détails de la tâche et enregistrez les modifications.
 Filtrer les Tâches
 Utilisez la liste déroulante du statut pour filtrer les tâches en fonction de leur statut actuel.
-Dépannage
+
+Dépannage:
 Le serveur de développement ne démarre pas : Assurez-vous que toutes les dépendances sont installées correctement en exécutant npm install. Si le problème persiste, essayez de supprimer le dossier node_modules et de réinstaller les dépendances avec npm install.
 Les modifications ne sont pas reflétées : Si les modifications dans le code ne sont pas reflétées dans le navigateur, essayez de vider le cache du navigateur ou de redémarrer le serveur de développement Angular.
 Contribuer
@@ -67,4 +69,4 @@ Licence
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
 Contact
-Pour toute question ou suggestion, veuillez contacter ezarouali.abdel@agmail.com.
+Pour toute question ou suggestion, veuillez contacter: ezarouali.abdel@agmail.com.
